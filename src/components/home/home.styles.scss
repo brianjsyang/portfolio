@@ -48,3 +48,9 @@ $description-bg: url('../../assets/description-bg.png');
     background-position: 0% 50%;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .landing {
+    font-size: 40px;
+  }
+}
