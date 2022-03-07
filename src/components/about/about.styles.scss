@@ -1,0 +1,37 @@
+.footer {
+  height: 45%;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  &.header {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-family: 'Open Sans';
+  }
+
+  &.sns {
+    font-size: 35px;
+  }
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+
+  a {
+    color: white;
+  }
+
+  .icon-logo {
+    margin: 10px;
+  }
+}
+
+.logo-image {
+  width: 100px;
+}

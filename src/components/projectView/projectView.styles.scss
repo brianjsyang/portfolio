@@ -1,0 +1,42 @@
+.project-header {
+  height: 5%;
+
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 35px;
+  color: black;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+
+  background-color: white;
+
+  a {
+    color: darkorchid;
+    text-decoration: none;
+
+    &:hover {
+      color: skyblue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.rows {
+  height: 95%;
+}
+
+@media only screen and (max-width: 576px) {
+  .projects {
+    border-bottom: 2px dotted darkgray;
+  }
+}

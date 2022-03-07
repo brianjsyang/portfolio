@@ -1,0 +1,25 @@
+.content {
+  &.home {
+    height: 100vh;
+    min-height: 500px;
+    background-color: black;
+  }
+
+  &.projectView {
+    height: 135vh;
+    background-color: white;
+  }
+
+  &.about {
+    height: 550px;
+    background-color: rgb(61, 61, 61);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .content {
+    &.projectView {
+      height: 280vh;
+    }
+  }
+}
