@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { Container, Image, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 import './navigate.styles.scss';
 import logo from '../../assets/glasses-logo.png';
@@ -17,27 +17,28 @@ function Navigate() {
           <Image src={logo} alt="logo" width="40" height="40" />
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link>
-            <Link
-              activeClass="active"
-              to="project"
-              spy={true}
-              smooth={true}
-              duration={0}
-            >
-              Projects
-            </Link>
+          <Nav.Link
+            onClick={() =>
+              scroller.scrollTo('project', {
+                smooth: true,
+                duration: 0,
+                activeClass: 'active',
+              })
+            }
+          >
+            Projects
           </Nav.Link>
-          <Nav.Link>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={0}
-            >
-              Contact
-            </Link>
+
+          <Nav.Link
+            onClick={() =>
+              scroller.scrollTo('about', {
+                smooth: true,
+                duration: 0,
+                activeClass: 'active',
+              })
+            }
+          >
+            Contact
           </Nav.Link>
         </Nav>
       </Container>
