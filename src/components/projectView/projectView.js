@@ -28,7 +28,7 @@ const ProjectView = () => {
                     Website for the client's restaurant featuring Instagram
                     links and customer reviews. <br />
                     <a
-                      href="https://yugafu-wip.herokuapp.com/"
+                      href="https://www.yugafujapanesebistro.ca/"
                       target="_blank"
                       rel="noreferrer"
                     >
